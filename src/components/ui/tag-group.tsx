@@ -46,7 +46,7 @@ const TagList = <T extends object>({ className, ...props }: TagListProps<T>) => 
   )
 }
 
-interface TagProps extends TagPrimitiveProps {}
+type TagProps = TagPrimitiveProps
 
 const Tag = ({ className, children, ...props }: TagProps) => {
   const textValue = typeof children === "string" ? children : undefined
